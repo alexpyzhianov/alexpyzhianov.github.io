@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Bash Scripting
+# Bash scripts
 
 Almost no one I know takes bash scripting seriously. Show your fellow developer a `deploy.sh` and they'll run for cover screaming. But if you're ready to suspend your disbelief for a moment, bash scripting can be a powerful tool to automate and coordinate the execution of shell commands and other scripts.
 
@@ -46,20 +46,20 @@ All in all, it's usually dozens of commands that I need to run in a specific ord
 Here is a simplified excerpt from one of my scripts. It reads a CSV file with the names of the services I'm working on, and for each one, it pulls the latest changes from the repository, installs the dependencies, runs the migrations, and starts the service with pm2.
 
 ```bash
-function for_all_repos() {
+function update_and_run_all() {
     while IFS=, read -r service_name migrations_command start_command
     do
+        echo "Working on $service_name"
         cd $service_name
         git pull --rebase
         npm install
         eval $migrations_command
         eval "pm2 start \"$start_command\" --name $service_name"
-    fi
     done < repos.csv
 }
 ```
 
-This `repos.csv` file could look like this:
+Your `repos.csv` file could look like this:
 
 ```csv
 backend,npm run migrations,npm run start
