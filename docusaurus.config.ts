@@ -63,13 +63,13 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "wikiSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Wiki",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Updates", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/alexpyzhianov/alexpyzhianov.github.io",
           label: "GitHub",
           position: "right",
         },
