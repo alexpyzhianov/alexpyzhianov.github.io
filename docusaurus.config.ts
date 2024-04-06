@@ -3,8 +3,8 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "by Alex",
+  tagline: "The place where I share my knowledge",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -56,9 +56,9 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "wikiSidebar",
+          sidebarId: "mainSidebar",
           position: "left",
-          label: "Wiki",
+          label: "Home",
         },
         { to: "/blog", label: "Updates", position: "left" },
         {
@@ -69,49 +69,22 @@ const config: Config = {
       ],
     },
     footer: {
-      style: "dark",
+      style: "light",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
+          label: "Stack Overflow",
+          href: "https://stackoverflow.com/questions/tagged/docusaurus",
         },
         {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
+          label: "Discord",
+          href: "https://discordapp.com/invite/docusaurus",
         },
         {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
+          label: "Twitter",
+          href: "https://twitter.com/docusaurus",
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: 'built with <a href="https://docusaurus.io">Docusaurus</a>',
     },
     prism: {
       theme: prismThemes.github,
