@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Bash scripts
 
 Almost no one I know takes bash scripting seriously. Show your fellow developer a `deploy.sh` and they'll run for cover screaming. But if you're ready to suspend your disbelief for a moment, bash scripting can be a powerful tool to automate and coordinate the execution of shell commands and other scripts.
