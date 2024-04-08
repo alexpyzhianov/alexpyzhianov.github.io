@@ -68,24 +68,6 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      style: "light",
-      links: [
-        {
-          label: "Stack Overflow",
-          href: "https://stackoverflow.com/questions/tagged/docusaurus",
-        },
-        {
-          label: "Discord",
-          href: "https://discordapp.com/invite/docusaurus",
-        },
-        {
-          label: "Twitter",
-          href: "https://twitter.com/docusaurus",
-        },
-      ],
-      copyright: 'built with <a href="https://docusaurus.io">Docusaurus</a>',
-    },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
